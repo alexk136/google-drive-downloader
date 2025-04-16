@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+*.json
+
+# Downloaded files
+photos_download/
+my_photos/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
