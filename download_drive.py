@@ -63,8 +63,9 @@ def download_all_files(service, save_dir='drive_download', page_size=1000):
         try:
             results = service.files().list(
                 pageSize=page_size,
-                fields="nextPageToken, files(id, name, mimeType)",
-                pageToken=page_token
+                fields="nextPageToken, files(id, name, mimeType, owners)",
+                pageToken=page_token,
+                q="'me' in owners"
             ).execute()
 
             items = results.get('files', [])
