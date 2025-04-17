@@ -5,8 +5,7 @@ __pycache__/
 *.json
 
 # Downloaded files
-photos_download/
-my_photos/
+drive_downloads/
 
 # IDE
 .idea/
@@ -15,3 +14,6 @@ my_photos/
 # OS
 .DS_Store
 Thumbs.db
+
+# creads
+credentials.json
